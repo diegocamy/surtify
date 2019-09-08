@@ -89,6 +89,7 @@ function borrarTodo(e){
   if(listaItems.innerHTML){
     if(confirm('Estas seguro/a?')){
       listaItems.innerHTML = '';
+      localStorage.removeItem('arrItems');
     }
   }
 }
